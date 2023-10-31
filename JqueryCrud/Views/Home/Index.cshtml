@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h2>Index</h2>
+    @Html.ActionLink("Create New", "Home", "Save")
+
+    @Html.Partial("GetEmployee")
+    @*@{
+            Html.RenderPartial("SaveEmployee");
+        }*@
+    @*<div style="width:90%;margin:auto" class="tbl tbl-hover">
+            <table  id="mytable">
+                <thead>
+                    <tr>
+                        <
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email ID</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.l_data)
+                    {
+                    <tr>
+                        <td>@item.EmployeeId</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.Email</td>
+                        <td>@item.City</td>
+                        <td>@item.Country</td>
+                    </tr>
+                    }
+                </tbody>
+
+            </table>
+
+        </div>*@
+
+</body>
+</html>
+
